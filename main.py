@@ -32,8 +32,8 @@ def client_app():
 @app.route('/data', methods=['GET'])
 def getData():
   token = request.args.get('token')
-  res = 'Hello token='+token if token else "Hello"
-  return res
+  ress = 'Hello token='+token if token else "Hello"
+  return ress
 
 @app.route('/data', methods=['POST'])
 def addData():
